@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Tom Smith"]
-  s.date = "2014-03-07"
-  s.description = "ActiveRecord default_scope alternative injecting scopes into operations. Think of it as default_scope with naming and enhanced functionality"
+  s.date = "2014-03-11"
+  s.description = "ActiveRecord default_scope alternative for injecting scopes into database operations. Think of it as named default_scope with enhanced functionality"
   s.email = "tsmith@landfall.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -25,12 +25,20 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/scope_injector.rb"
+    "lib/scope_injector.rb",
+    "lib/scope_injector/scope_injector.rb",
+    "lib/scope_injector/scope_injector_relation.rb",
+    "scope_injector.gemspec",
+    "spec/database.yml",
+    "spec/scope_injector_spec.rb",
+    "spec/spec_helper.rb",
+    "spec/support/models.rb",
+    "spec/support/schema.rb"
   ]
   s.homepage = "http://github.com/rtomsmith/scope_injector"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.2.2"
-  s.summary = "ActiveRecord default_scope alternative injecting scopes into operations. Think of it as default_scope with naming and enhanced functionality"
+  s.summary = "ActiveRecord scoping mechanism similar to default_scope. Think of it as default_scope with naming and enhanced functionality"
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
