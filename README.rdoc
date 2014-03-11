@@ -1,6 +1,7 @@
-= scope_injector
+= Scope Injector
 
-Description goes here.
+<Description goes here...>
+
 
 == Contributing to scope_injector
  
